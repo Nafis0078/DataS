@@ -99,29 +99,67 @@
 
 
 
-#include <iostream>
-using namespace std;
-int rec(int n){
-    int a=0;
-    int b=1;
-    if (n==0 or n==1) return n;
-    int c = 0;
-    int i = 2;
-    while(i<=n){
-    c=a+b;
-    a=b;
-    b=c;
-    i++;
+// #include <iostream>
+// using namespace std;
+// int rec(int n){
+//     int a=0;
+//     int b=1;
+//     if (n==0 or n==1) return n;
+//     int c = 0;
+//     int i = 2;
+//     while(i<=n){
+//     c=a+b;
+//     a=b;
+//     b=c;
+//     i++;
 
+//     }
+//     return c;
+    
+    
+// }
+// int main(){
+//     int n;
+//     cout<<"Enter a number";
+//     cin>>n;
+//     cout<<rec(n);
+// return 0;
+// }
+
+
+
+
+
+
+
+
+
+// Using dynamic programming #Revision
+
+
+
+
+
+#include <iostream>
+#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
+    vector <int> dp;
+
+ int fib(int n){
+
+        if (n==0 || n==1) return n;
+        if (dp[n]!=-1) return dp[n];
+
+
+        else return dp[n] = fib(n-1) + fib(n-2);
     }
-    return c;
-    
-    
-}
+
 int main(){
-    int n;
-    cout<<"Enter a number";
-    cin>>n;
-    cout<<rec(n);
+
+    int n = 5;
+    dp.clear();
+    dp.resize(n+1 , -1);
+    cout<<fib(n);
 return 0;
 }

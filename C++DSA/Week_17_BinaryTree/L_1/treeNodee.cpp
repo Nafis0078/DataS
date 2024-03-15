@@ -92,13 +92,13 @@ int main(){
 
         cout<<"Node Values: ";
         display(a);
-        cout<<endl;
-        cout<<"SUM: "<<summ(a)<<endl;
-        cout<<"Product: "<<product(a)<<endl;
-        cout<<"Size: "<<size(a)<<endl;
-        cout<<"Max Value: "<<maxValue(a)<<endl;
-        cout<<"Min Value: "<<minValue(a)<<endl;
-        cout<<"Levels: "<<levels(a)<<endl;
-        cout<<"diameter: "<<diameter(a)<<endl;
+        // cout<<endl;
+        // cout<<"SUM: "<<summ(a)<<endl;
+        // cout<<"Product: "<<product(a)<<endl;
+        // cout<<"Size: "<<size(a)<<endl;
+        // cout<<"Max Value: "<<maxValue(a)<<endl;
+        // cout<<"Min Value: "<<minValue(a)<<endl;
+        // cout<<"Levels: "<<levels(a)<<endl;
+        // cout<<"diameter: "<<diameter(a)<<endl;
 return 0;
 }
